@@ -1,38 +1,16 @@
 <template>
-    <h1>${message}</h1>
-
-    <div>
-        <ul>
-            <li repeat.for="person of people">
-                <span show.bind="editing !== $index">
-                    ${ person }
-                    <button click.trigger="edit($index)">Edit</button>
-                </span>
-
-                <span show.bind="editing === $index">
-                    <input type="text" value.bind="newValue" />
-                    <button click.trigger="save($index)">Save</button>
-                </span>
-
-                <button click.trigger="delete($index)">Delete</button>
-            </li>
-        </ul>
-    </div>
-
-    <form>
+    
+    <nav>
         <div>
-            First Name:
-            <input type="text" name="firstName" value.bind="firstName" />
+            <ul>
+                <li repeat.for="route of router.navigation">
+                    <a href.bind="route.href">${ route.title }</a>
+                </li>
+            </ul>
         </div>
-        <div>
-            Last Name:
-            <input type="text" name="lastName" value.bind="lastName" />
-        </div>
-        <br />
-        <div>
-            <b>Full name: </b> ${ fullName }
-        </div>
+    </nav>
+    <br />
 
-        <button click.trigger="create()">Create</button>
-    </form>
+    <router-view></router-view>
+    
 </template>

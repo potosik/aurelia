@@ -1,0 +1,38 @@
+<template>
+    <h1>${message}</h1>
+
+    <div>
+        <ul>
+            <li repeat.for="person of people">
+                <span show.bind="editing !== $index">
+                    ${ person }
+                    <button click.trigger="edit($index)">Edit</button>
+                </span>
+
+                <span show.bind="editing === $index">
+                    <input type="text" value.bind="newValue" />
+                    <button click.trigger="save($index)">Save</button>
+                </span>
+
+                <button click.trigger="delete($index)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <form>
+        <div>
+            First Name:
+            <input type="text" name="firstName" value.bind="firstName" />
+        </div>
+        <div>
+            Last Name:
+            <input type="text" name="lastName" value.bind="lastName" />
+        </div>
+        <br />
+        <div>
+            <b>Full name: </b> ${ fullName }
+        </div>
+
+        <button click.trigger="create()">Create</button>
+    </form>
+</template>
