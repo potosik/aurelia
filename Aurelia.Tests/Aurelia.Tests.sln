@@ -89,6 +89,26 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Aurelia.Demo_2", "Aurelia.D
 		SlnRelativePath = "Aurelia.Demo_2\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Aurelia.Demo_3", "Aurelia.Demo_3\", "{0EA0C0F1-21EA-48F2-B137-D30B2D924501}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_23195"
+		Debug.AspNetCompiler.PhysicalPath = "Aurelia.Demo_3\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_23195\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_23195"
+		Release.AspNetCompiler.PhysicalPath = "Aurelia.Demo_3\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_23195\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "23195"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +135,10 @@ Global
 		{95711FC1-F32C-4186-9872-1A2E56350359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95711FC1-F32C-4186-9872-1A2E56350359}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{95711FC1-F32C-4186-9872-1A2E56350359}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0EA0C0F1-21EA-48F2-B137-D30B2D924501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA0C0F1-21EA-48F2-B137-D30B2D924501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA0C0F1-21EA-48F2-B137-D30B2D924501}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA0C0F1-21EA-48F2-B137-D30B2D924501}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
