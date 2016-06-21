@@ -1,0 +1,16 @@
+<template>
+    
+    <nav>
+        <div>
+            <ul>
+                <li repeat.for="route of router.navigation">
+                    <a href.bind="route.href">${ route.title }</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <router-view></router-view>
+    
+</template>
