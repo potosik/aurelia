@@ -1,5 +1,7 @@
 ﻿export function configure (aurelia) {
-    aurelia.use.standardConfiguration();
+    aurelia.use
+        .standardConfiguration()
+        .developmentLogging();
     //aurelia.use
     //    .defaultBindingLanguage()
     //    .defaultResources()
